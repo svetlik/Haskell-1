@@ -28,10 +28,10 @@ class LanguageGame
   end
 
   def valid_word_length
-    base.length * sequence_length
+    language_base.length * sequence_length
   end
 
-  def base
+  def language_base
     @language.gsub("^n", '')
   end
 
