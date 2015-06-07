@@ -23,7 +23,7 @@ class LanguageGame
 
   def valid_word
     valid_word = ""
-    unique_letters.each {|letter| valid_word += letter * sequence_length}
+    unique_letters.each { |letter| valid_word += letter * sequence_length }
     valid_word
   end
 
@@ -36,9 +36,9 @@ class LanguageGame
   end
 
   def unique_letters
-    unique_letters = []
-    @word.each_char {|char| unique_letters << char}
-    unique_letters.uniq!
+    letters = []
+    @word.each_char { |char| letters << char }
+    letters.uniq!
   end
 
   def first_letter
