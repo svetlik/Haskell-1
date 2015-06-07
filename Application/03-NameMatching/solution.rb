@@ -21,11 +21,11 @@ class NameMatching
   end
 
   def female_names
-    names_list.each.select { |name| name.end_with?('tta') }
+    names_list.select { |name| name.end_with?('tta') }
   end
 
   def male_names
-    names_list.each.select { |name| name.end_with?('ss') }
+    names_list.select { |name| name.end_with?('ss') }
   end
 
   def unknown_male_names_count
